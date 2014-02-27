@@ -1,8 +1,8 @@
 
-Development through committee
+Development through Committee
 
 
-== README
+README
  
 This README would normally document whatever steps are necessary to get the
 application up and running.
