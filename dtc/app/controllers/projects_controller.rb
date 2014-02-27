@@ -4,10 +4,18 @@ class ProjectsController < ApplicationController
 		@projects = Project.all
 	end
 
+	def new
+		@project = Project.new
+	end
+
 	def create
-		@title = params[:title]
-		@email = params[:email]
-		@description = params[:description]
+		@project = Project.create!(project_params)
+
+		if @project.save
+			redirect_to projects_path
+		else
+			render new_project_path
+		end
 
 	end
 
@@ -34,5 +42,11 @@ class ProjectsController < ApplicationController
 		Project.delete(params[:id])
 		redirect_to '/projects'
 	end
+
+	private
+
+		def project_params
+			params.require(:project).permit(:title, :email, :description)
+		end
 
 end

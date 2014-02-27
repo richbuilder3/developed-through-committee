@@ -9,11 +9,12 @@
 <body>
  	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= render 'layouts/user_widget' %>
 	<%= yield %>
 
 
 	<!-- //might remove this line, along with widget -->
-	<%= render 'layouts/user_widget' %>
+	
 
 </body>
 </html>
