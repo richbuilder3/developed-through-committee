@@ -3,7 +3,9 @@ Dtc::Application.routes.draw do
 
   root :to => "home#index"
 
-  devise_for :users
+  get "about" => "pages#about"
+
+  devise_for :users, :controllers => {:registrations => "users/registrations", :passwords => "users/passwords"}
 
   resources :users
 
@@ -13,8 +15,6 @@ Dtc::Application.routes.draw do
 
   resources :projects
 
-  
-  
 
 end
 

@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+	# before_filter :signed_in_employer
+		# above for signed in employer
 
 	def index
 		@projects = Project.all
@@ -9,13 +11,19 @@ class ProjectsController < ApplicationController
 	end
 
 	def create
-		@project = Project.create!(project_params)
-
+		@employer = current_user
+		current_user.create_project!(@current_user)
 		if @project.save
 			redirect_to projects_path
 		else
 			render new_project_path
 		end
+		# @project = Project.create!(project_params)
+		# if @project.save
+		# 	redirect_to projects_path
+		# else
+		# 	render new_project_path
+		# end
 
 	end
 
