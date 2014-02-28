@@ -4,8 +4,13 @@ class Employer < User
 
 
 
-	def create_project!
-		@project = Project.create_project!(params[:user_id], [:project])
+
+	def create_project!(employer, project)
+		@project = Project.create(project)
 	end
 
+
+	def delete_project!(employer, project)
+		@project = Project.destroy(project)
+	end
 end

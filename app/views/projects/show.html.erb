@@ -1,6 +1,19 @@
 show.html.erb
 
-<h1>Projects</h1>
-<p><%= @project.title %></p>
-<p><%= @project.title %></p>
-<p><%= @project.description %></p>
+<h1>
+<table border="1">
+	<tr><td>
+	<% if @project.employer %>
+		<%= @project.employer.name %>
+	<% end %>
+	</td></tr>
+	<tr><td><%= @project.title %></td></tr>
+	<tr><td><%= @project.email %></td></tr>
+	<tr><td><%= @project.description %></td></tr>
+</table>
+</h1>
+
+<form action="<%= project_path(@project) %>" method='post'>
+	<input type="hidden" name='_method' value'delete'>
+	<button id='delete'>delete</button>
+</form>

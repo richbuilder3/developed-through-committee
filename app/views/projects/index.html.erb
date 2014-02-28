@@ -15,7 +15,7 @@
 			<td><a href="<%= edit_project_path(project) %>">EDIT</a></td>
 			<td><a href="<%= project_path(project) %>">SHOW</a></td>
 			<td>
-				<form action="<%= '/projects/:id' %>" method="delete">
+				<form action="<%= 'project_path(@project)' %>" method="delete">
 					<input type="hidden" value="delete" name="_method">
 					<button>DELETE</button>
 				</form>

@@ -13,10 +13,10 @@ class ProjectsController < ApplicationController
 	def create
 		@employer = current_user
 
-		@project = Project.new();
-	
+		@project = @employer.create_project!(@employer, project_params)
+
+		
 		if @project.save
-			binding.pry
 			@employer.projects << @project
 			redirect_to projects_path(@current_user)
 		else
