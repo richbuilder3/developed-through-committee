@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
 		
 		if @project.save
 			@employer.projects << @project
-			redirect_to projects_path(@current_user)
+			redirect_to root_path(@current_user)
 		else
 			render new_project_path
 		end

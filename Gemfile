@@ -46,6 +46,15 @@ gem 'capybara'
 gem 'devise'
 
 
+# for contact form
+gem 'mail_form'
+gem 'simple_form'
+
+
+group :development, :test do
+gem 'foreman'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

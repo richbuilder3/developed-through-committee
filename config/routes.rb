@@ -15,6 +15,11 @@ Dtc::Application.routes.draw do
 
   resources :projects
 
+  match '/send_mail', to: 'contact#send_mail', via: 'post'
+
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
 
 end
 
