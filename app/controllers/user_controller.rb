@@ -6,16 +6,6 @@ class UsersController < ApplicationController
 	end
 
 
-	def new
-
-	end
-
-	def create
-
-	# redirect_to 
-	end
-
-	end
 
 private
 

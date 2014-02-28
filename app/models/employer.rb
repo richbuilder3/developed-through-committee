@@ -5,7 +5,7 @@ class Employer < User
 
 
 	def create_project!
-		projects.create_project!(user_id: project.id)
+		@project = Project.create_project!(params[:user_id], [:project])
 	end
 
 end

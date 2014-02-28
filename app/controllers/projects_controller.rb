@@ -12,9 +12,13 @@ class ProjectsController < ApplicationController
 
 	def create
 		@employer = current_user
-		current_user.create_project!(@current_user)
+
+		@project = Project.new();
+	
 		if @project.save
-			redirect_to projects_path
+			binding.pry
+			@employer.projects << @project
+			redirect_to projects_path(@current_user)
 		else
 			render new_project_path
 		end

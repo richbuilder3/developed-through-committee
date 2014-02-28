@@ -1,6 +1,6 @@
 class Project < ActiveRecord::Base
 
-belongs_to :employers
+belongs_to :user	
 
 
 end
