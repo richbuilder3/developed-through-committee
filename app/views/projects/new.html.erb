@@ -11,8 +11,12 @@
 </ul> 
 
 <form>-->
-
+<div align="center">
 <%= form_for @project do |f| %>
+
+  <%= f.label :name %>:
+  <%= f.label :name %><br />
+
   <%= f.label :email %>:
   <%= f.text_field :email %><br />
 
@@ -20,7 +24,8 @@
   <%= f.text_field :title %><br />
 
   <%= f.label :description %>:
-  <%= f.text_field :description %><br />
+  <%= f.text_area :description %><br />
 
   <%= f.submit %>
 <% end %>
+<div>
