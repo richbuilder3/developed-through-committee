@@ -1,17 +1,10 @@
-<!-- <form>
 
-<div>
-<ul>
 
-<li><input type="text" name="email" id="email" placeholder="Enter your email address here!"></li>
-<li><input type="text" name="title" id="title" maxlength="20" placeholder="Title"></li>
-<li><input type="text" name="description" id="description" placeholder="project scope"></li>
-<li><button type="submit">Submit new Project!</button></li>
-</div>
-</ul> 
+<a href="<%= root_path %>">Home Page</a>
+<a href="<%= profiles_path %>">Profiles</a>
 
-<form>-->
 <div align="center">
+
 <%= form_for @project do |f| %>
 
   <%= f.label :name %>:
@@ -29,3 +22,17 @@
   <%= f.submit %>
 <% end %>
 <div>
+
+	<!-- <form>
+
+<div>
+<ul>
+
+<li><input type="text" name="email" id="email" placeholder="Enter your email address here!"></li>
+<li><input type="text" name="title" id="title" maxlength="20" placeholder="Title"></li>
+<li><input type="text" name="description" id="description" placeholder="project scope"></li>
+<li><button type="submit">Submit new Project!</button></li>
+</div>
+</ul> 
+
+<form>-->
