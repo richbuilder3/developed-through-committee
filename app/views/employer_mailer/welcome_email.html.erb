@@ -7,5 +7,11 @@
 <body>
 	<%= @employer.name %>
 	
+	<% @projects.each do |project| %>
+		<p><%= "#{ project.name }" %></p>
+		<p><%= "#{ project.email}" %></p>
+		<p><%= "#{ project.title}" %></p>
+		<%= "#{ project.description}" %>
+	<% end %>
 </body>
 </html>
