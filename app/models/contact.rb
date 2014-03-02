@@ -1,5 +1,6 @@
 class Contact < MailForm::Base 
 
+
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
@@ -16,4 +17,3 @@ class Contact < MailForm::Base
   end
 end
 
-# "your_email@example.org"

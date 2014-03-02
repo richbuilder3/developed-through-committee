@@ -1,0 +1,20 @@
+profile new
+
+<div align="center">
+<%= form_for @profile do |f| %>
+
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :email %>:
+  <%= f.text_field :email %><br />
+
+  <%= f.label :work %>:
+  <%= f.text_field :work %><br />
+
+  <%= f.label :story %>:
+  <%= f.text_area :story %><br />
+
+  <%= f.submit %>
+<% end %>
+<div>
