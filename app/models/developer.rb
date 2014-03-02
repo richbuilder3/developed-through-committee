@@ -9,4 +9,10 @@ class Developer < User
 	def delete_profile!(developer, profile)
 		@profile = Profile.destroy(profile)
 	end
+
+	# def show
+	# 	@developer = Developer.find(params[:id])
+	# 	@profiles = @developer.profiles.
+	# end
+
 end
