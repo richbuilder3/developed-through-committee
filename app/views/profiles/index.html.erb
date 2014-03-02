@@ -1,1 +1,28 @@
-profile index
+<h1>Profiles Page/Index</h1>
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Work</th>
+		<th>Story</th>
+	</thead>
+	<tbody>
+		<% @profiles.each do |profile| %>
+		<tr>
+			<td><%= profile.name %></td>
+			<td><%= profile.email %></td>
+			<td><%= profile.work %></td>
+			<td><%= profile.story %></td>
+			<td><a href="<%= edit_profile_path(profile) %>">EDIT</a></td>
+			<td><a href="<%= profile_path(profile) %>">SHOW</a></td>
+			<td>
+				<form action="<%= 'profile_path(@profile)' %>" method="delete">
+					<input type="hidden" value="delete" name="_method">
+					<button>DELETE</button>
+				</form>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<a href="<%= new_profile_path %>">Want to become a part of DTC?</a>
