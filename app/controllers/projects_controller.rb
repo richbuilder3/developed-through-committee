@@ -12,12 +12,11 @@ class ProjectsController < ApplicationController
 
 	def create
 		@employer = current_user
-		@project = @employer.create_project!(@employer, project_params)		
+		@project = @employer.create_project!( project_params)		
 		if @project.save
-			@employer.projects << @project
 			redirect_to root_path(@current_user)
 		else
-			render new_project_path
+			render new_project_path 
 		end
 	end
 

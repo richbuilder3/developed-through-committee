@@ -7,11 +7,17 @@ class Employer < User
 	# 	@contact = Contact.new(contact)
 	# end
 
-	def create_project!(employer, project)
-		@project = Project.create(project)
+	def create_project!(project_params)
+		@project = Project.create(project_params)
+		self.projects << @project
+		EmployerMailer.welcome_email(self).deliver
+		return @project
 	end
 
 	def delete_project!(employer, project)
 		@project = Project.destroy(project)
 	end
+
+
+
 end
