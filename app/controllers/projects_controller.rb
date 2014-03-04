@@ -4,6 +4,11 @@ class ProjectsController < ApplicationController
 
 	def index
 		@projects = Project.all
+
+		respond_to do |format|
+			format.html
+			format.json { render json: @projects }
+		end
 	end
 
 	def new
@@ -13,11 +18,14 @@ class ProjectsController < ApplicationController
 	def create
 		@employer = current_user
 		@project = @employer.create_project!( project_params)		
-		if @project.save
-			redirect_to root_path(@current_user)
-		else
-			render new_project_path 
+		@project.save
+		
+		respond_to do |format|
+			format.html {redirect_to root_path(@current_user)}
+			format.json { render json: @project }
 		end
+		
+
 	end
 
 	def show

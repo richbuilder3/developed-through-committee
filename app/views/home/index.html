@@ -1,0 +1,104 @@
+
+		<!-- trying without the navbar -->
+		<div class = "navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			<div class="navbar-inner">
+				
+				<button id="profile-button" type="button" class="btn btn-default btn-lg active">Contact us to become a part of the team</button>
+				
+				<button id="project-button" type="button" class="btn btn-default btn-lg active">
+					Contact us for project
+				</button>
+			</div>
+			</div>
+		</div>
+		<!-- <div class="row"> -->
+			<!-- <div clas="col-md-offset-8"> -->
+
+				<div class="container"> 
+					<div class="jumbotron">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/blkwht.JPG" alt="blkwhitepic" = "img-responsive">
+								</div>
+								<div class="item">
+									<img src="images/drapes.jpg" alt="drapes" = "img-responsive">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel" data-slide="prev">
+								<span class="icon-prev">
+								</span>
+							</a>
+							<a class="right carousel-control" href="#carousel" data-slide="next">
+								<span class="icon-next">
+								</span>
+							</a>
+						</div>
+					</div>
+			 	</div> 
+			 <!-- </div> -->
+		<!-- </div>	 -->
+					<!-- profiles code -->
+					
+				<!-- <div class="container"> -->
+					<!-- Profile form -->
+					<form id="profile-form">
+						<input id="name-field" placeholder='name' type="text"><br>
+						<input id="email-field" placeholder='email' type="text"><br>
+						<input id="work-field" placeholder='work' type="text"><br>
+						<input id="story-field" placeholder='story' type="text"><br>
+						<button type="submit"></button>
+					</form>
+				<!-- </div> -->
+					<div class="col-md-3 col-md-offset-8">
+						<!-- Profile List -->
+					<ul id='profile-list'>
+					</ul>
+					</div>
+				
+					<!-- Profile template -->
+					<script id="profileview-template" type='text/x-handlebars-template'>
+					<h2> {{ name  }}%> </h2>
+					<h3> {{ email }} %> </h3>
+					<h3> {{ work  }}%> </h3>
+					<h3> {{ story }} %> </h3>
+					</script>
+
+			<!--projects code -->
+					<!-- project form -->
+					<form id="project-form">
+						<input id="name-field" placeholder='name' type="text"><br>
+						<input id="email-field" placeholder='email' type="text"><br>
+						<input id="title-field" placeholder='title' type="text"><br>
+						<input id="description-field" placeholder='description' type="text"><br>
+						<button type="submit"></button>
+					</form>
+
+					<!-- project list -->
+					<ul id='project-list'>
+					</ul>
+
+	<!-- project/contact template 
+		although I don't need this information to show on the page-->
+		<script id="projectview-template" type='text/x-handlebars-template'>
+			<p> {{ name }} </p>
+			<p> {{ email }} </p>
+			<p> {{ title }} </p>
+			<p> {{ description }}</p>
+		</script>
+		
+
+
+
+		<%= javascript_include_tag "underscore" %>
+		<%= javascript_include_tag "backbone" %>
+		<%= javascript_include_tag "app" %>

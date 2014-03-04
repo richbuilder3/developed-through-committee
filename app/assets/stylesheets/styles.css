@@ -1,0 +1,41 @@
+body {
+	background-color: #B2E0FF;
+  /*padding-top: 40px;*/
+/*padding is for use with navbar 100px */
+
+
+}
+
+ul{
+  font-size: 1.5em;
+}
+
+
+li{
+  background-color: #FFFFCC;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 0.25em;
+  width: 50%;
+  box-shadow: .1em .1em darkgray;
+}
+
+
+button{
+	border-radius: 50%;
+	background-color: black;
+}
+
+input{
+	 box-shadow: .01em .01em green;
+   border-radius: .4em;
+}
+
+#profile-form {
+  display: none;
+}
+
+
+#project-form {
+  display: none;
+}

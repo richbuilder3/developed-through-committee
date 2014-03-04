@@ -4,6 +4,11 @@ class ProfilesController < ApplicationController
 
 	def index
 		@profiles = Profile.all
+
+		respond_to do |format|
+			format.html
+			format.json { render json: @profiles }
+		end
 	end
 
 	def new
@@ -13,11 +18,11 @@ class ProfilesController < ApplicationController
 	def create
 		@developer = current_user
 		@profile = @developer.create_profile!(@developer, profile_params)
-		if @profile.save
-			@developer.profiles << @profile
-			redirect_to root_path(@current_user)
-		else
-			render new_profile_path
+		@profile.save
+
+		respond_to do |format|
+			format.html { redirect_to root_path(@current_user)}
+			format.json { render json: @profile }
 		end
 	end
 
