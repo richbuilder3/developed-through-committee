@@ -53,6 +53,7 @@ z-index: +1;
   padding: 1em;
   margin: .25em;
   width: 50%;
+  position: absolute;
 }
 
 li{
