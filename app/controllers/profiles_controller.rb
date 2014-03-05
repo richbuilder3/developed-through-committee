@@ -34,10 +34,6 @@ class ProfilesController < ApplicationController
 		@profile = Profile.find(params[:id])
 	end
 
-	# def update
-	# 	profile = Project.find(params[:id])
-	# 	profile.name
-
 
 	private
 

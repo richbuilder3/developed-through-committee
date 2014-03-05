@@ -41,18 +41,19 @@ var ProfileListView = Backbone.View.extend({
 	//render 1 profile to the list
 	renderProfile: function(profile){
 		profile.view = new ProfileView({ model: profile });
+		this.$el.empty();
 		this.$el.prepend( profile.view.render().el );
 		return this
 	},
 
-	// how to render all
-	render: function(){
-		var self = this;
-		this.$el.empty();
-		_.each(this.collection.models, function(profile){
-			self.renderProfile(profile);
-		});
-	}
+	// will render entire list
+	// render: function(){
+	// 	var self = this;
+	// 	this.$el.empty();
+	// 	_.each(this.collection.models, function(profile){
+	// 		self.renderProfile(profile);
+	// 	});
+	// }
 });
 // profile form View
 var ProfileFormView = Backbone.View.extend({
@@ -126,18 +127,19 @@ var ProjectListView = Backbone.View.extend({
 	//render 1 project to the list
 	renderProject: function(project){
 		project.view = new ProjectView({ model: project });
-		this.$el.prepend( project.view.render().el );
+		this.$el.empty();
+		this.$el.append( project.view.render().el );
 		return this
 	},
 
 	// how to render all
-	render: function(){
-		var self = this;
-		this.$el.empty();
-		_.each(this.collection.models, function(project){
-			self.renderProject(project);
-		});
-	}
+	// render: function(){
+	// 	var self = this;
+	// 	this.$el.empty();
+	// 	_.each(this.collection.models, function(project){
+	// 		self.renderProject(project);
+	// 	});
+	// }
 });
 // project form View
 var ProjectFormView = Backbone.View.extend({
