@@ -14,6 +14,12 @@
 			</div> 
 			</div> 
 			</div>
+					<div id='profile-list'>
+					</div>
+					
+					<div id='project-list'>
+					</div>
+					
 					<div id='about-info'>
 						<h5>Development by Committee has two focuses. One to provide really great Web Applications at the best rates available. 
 						<br>
@@ -21,9 +27,11 @@
 						As a client, your project will benefit by being development by a large team of great web developers.
 						<br>
 						<br>
-						As A developer you'll benefit from working on challenging projects with other skilled developers and designers as well as direction from Sr. Developers and Industry Guru's.
+						As a developer you'll benefit from working on challenging projects with other skilled developers and designers as well as direction from Sr. Developers and Industry Guru's.
 						</h5>
 					</div>
+
+
 
 					<form id="project-form">
 						<input id="name-field" placeholder='name' type="text"><br>
@@ -41,8 +49,6 @@
 						<input id="story-field" placeholder='story' type="text"><br>
 						<button type="submit"></button>
 					</form>
-
-
 
 				<div class="container"> 
 					<div class="jumbotron">
@@ -89,15 +95,15 @@
 					<div class="col-md-3 col-md-offset-8">
 						<!-- Profile List -->
 
-					<div id='profile-list'>
-					</div>
-					
+
+
+
 					<!-- Profile template -->
 					<script id="profileview-template" type='text/x-handlebars-template'>
-					<h2> {{ name  }}%> </h2>
-					<h3> {{ email }} %> </h3>
-					<h3> {{ work  }}%> </h3>
-					<h3> {{ story }} %> </h3>
+					<h2> {{ name  }} </h2>
+					<h3> {{ email }} </h3>
+					<h3> {{ work  }} </h3>
+					<h3> {{ story }} </h3>
 					</script>
 
 			<!--projects code -->
@@ -111,16 +117,15 @@
 					</form> -->
 
 					<!-- project list -->
-					<div id='project-list'>
-					</div>
+					
 
 	<!-- project/contact template 
 		although I don't need this information to show on the page-->
 		<script id="projectview-template" type='text/x-handlebars-template'>
-			<p> {{ name }} </p>
-			<p> {{ email }} </p>
-			<p> {{ title }} </p>
-			<p> {{ description }}</p>
+			<h2> {{ name }} </h2>
+			<h3> {{ email }} </h3>
+			<h3> {{ title }} </h3>
+			<h3> {{ description }}</h3>
 		</script>
 		
 		<%= javascript_include_tag "underscore" %>
