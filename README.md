@@ -1,32 +1,18 @@
 
 Development through Committee
 
+	Development by Committee has two focuses. One to provide really great Web Applications at the best rates available. 
 
-README
- 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+	As a client, your project will benefit by being development by a large team of great web developers.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	As a developer you'll benefit from working on challenging projects with other skilled developers and designers as well as direction from Sr. Developers and Industry Guru's.
 
 
-Please feel free to use a different markup language if you do not plan to run
+	After registering as a Client you'll be able to email our team to request a quote for your web Application.
+
+	After registering as a Developer you'll be able to email our team to request a quote for your web Application.
+
+
+	This Application was made using Rails 4 along with Backbone.js.
+
 <tt>rake doc:app</tt>.

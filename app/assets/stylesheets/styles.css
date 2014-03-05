@@ -33,29 +33,22 @@ input{
   padding: 1em;
   margin: .25em;
   width: 50%;
+  height: 100px;
+  float: right;
+  text-align: right;
   /*float: right;*/
  /* box-shadow: .1em .1em darkgray;*/
 }
-
 #profile-list {
- z-index: +1;
-  width: 50%;
-  border-radius: 1em;
-  padding: 1em;
-  margin: .25em;
-  width: 50%;
-  /*float: right;*/
- /*background-color: #FFFFCC;
-  display: none;
+  /*background-color: #FFFFCC;*/
   z-index: +1;
-  width: 30%;
   border-radius: 1em;
   padding: 1em;
   margin: .25em;
-  position: absolute;
-  float: right;*/
+  width: 50%;
+  float: right;
+  text-align: right;
 }
-
 #about-info {
   background-color: #FFFFCC;
   display: none;
