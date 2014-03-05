@@ -1,15 +1,59 @@
 body {
-	background-color: #B2E0FF;
-  /*padding-top: 40px;*/
-/*padding is for use with navbar 100px */
-
-
+	/*background-color: #B2E0FF;*/
+  background-color: #E25D33;
+ /*padding-top: 40px;*/
+/*padding is for use with navbar 100px;*/
 }
-
 ul{
   font-size: 1.5em;
 }
 
+button{
+	border-radius: 50%;
+	background-color: black;
+}
+input{
+	 box-shadow: .01em .01em green;
+   border-radius: .4em;
+}
+#profile-form {
+  display: none;
+  z-index: +1;
+  position: absolute;
+}
+#project-form {
+  display: none;
+  z-index: +1;
+  position: absolute;
+}
+#project-list {
+ z-index: +1;
+  width: 50%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: .25em;
+  width: 50%;
+ /* box-shadow: .1em .1em darkgray;*/
+}
+
+#profile-list {
+z-index: +1;
+  width: 50%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: .25em;
+  width: 50%;
+}
+
+#about-info {
+  display: none;
+z-index: +1;
+  width: 50%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: .25em;
+  width: 50%;
+}
 
 li{
   background-color: #FFFFCC;
@@ -20,37 +64,8 @@ li{
   box-shadow: .1em .1em darkgray;
 }
 
-
-button{
-	border-radius: 50%;
-	background-color: black;
+#help {
+  max-width: 200px; 
+  max-width: 200px;
 }
-
-input{
-	 box-shadow: .01em .01em green;
-   border-radius: .4em;
-}
-
-#profile-form {
-  display: none;
-  z-index: +1;
-}
-
-#project-form {
-  display: none;
-  z-index: +1;
-}
-
-#project-list {
- z-index: +1;
-  width: 50%;
-  background-color: yellow;
-  border-radius: 1em;
-  padding: 1em;
-  margin: .25em;
-  width: 50%;
-  box-shadow: .1em .1em darkgray;
-}
-
-
 

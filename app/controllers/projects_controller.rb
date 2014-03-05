@@ -24,8 +24,6 @@ class ProjectsController < ApplicationController
 			format.html {redirect_to root_path(@current_user)}
 			format.json { render json: @project }
 		end
-		
-
 	end
 
 	def show
@@ -43,8 +41,6 @@ class ProjectsController < ApplicationController
 		project.email = params[:email]
 		project.description = params[:description]
 		project.save
-
-	# redirect_to project_path(project)
 	end
 
 	def destroy

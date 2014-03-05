@@ -188,6 +188,10 @@ function eventHandlers() {
 		$('#project-form').fadeIn(500).css({display:'block'});
 		$('#project-form').fadeIn(500).css({display:'none'});
 	});
+	$('#about-button').on('click', function(e){
+		$('#about-info').fadeIn(500).css({display:'block'});
+		$('#about-info').fadeIn(500).css({display:'none'});
+	});
 }
 
 // function eventHandlers() {
