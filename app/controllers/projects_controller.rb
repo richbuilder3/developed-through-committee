@@ -26,15 +26,6 @@ class ProjectsController < ApplicationController
 		end
 	end
 
-	def show
-		@project = Project.find(params[:id])
-	end
-
-	def edit
-		@project = Project.find(params[:id])
-
-	end
-
 	def update
 		project = Project.find(params[:id])
 		project.title = params[:title]

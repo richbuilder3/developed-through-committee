@@ -100,11 +100,13 @@
 
 					<!-- Profile template -->
 					<script id="profileview-template" type='text/x-handlebars-template'>
-					<h2> {{ name  }} </h2>
-					<h3> {{ email }} </h3>
-					<h3> {{ work  }} </h3>
-					<h3> {{ story }} </h3>
+					<h2> Hi, {{ name  }}, we will contact you shortly</h2>
+					
 					</script>
+				<!-- 	<h3>  email  </h3>
+					<h3>  work   </h3>
+					<h3> story  </h3> -->
+
 
 			<!--projects code -->
 					<!-- project form -->
@@ -122,11 +124,16 @@
 	<!-- project/contact template 
 		although I don't need this information to show on the page-->
 		<script id="projectview-template" type='text/x-handlebars-template'>
-			<h2> {{ name }} </h2>
-			<h3> {{ email }} </h3>
-			<h3> {{ title }} </h3>
-			<h3> {{ description }}</h3>
+			<h2> Thanks,{{ name }}, someone will contact you about your project shortly. </h2>
+			
 		</script>
+		
+		<!-- <h3> {{ email }} </h3>
+			<h3> {{ title }} </h3>
+			<h3> {{ description }}</h3> -->
+
+
+
 		
 		<%= javascript_include_tag "underscore" %>
 		<%= javascript_include_tag "backbone" %>
