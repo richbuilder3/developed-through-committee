@@ -25,6 +25,16 @@ class ProfilesController < ApplicationController
 			format.json { render json: @profile }
 		end
 	end
+	
+	def show
+		@profile = Profile.find(params[:id])
+	end
+
+	def edit
+		@profile = Profile.find(params[:id])
+	end
+
+
 
 	private
 

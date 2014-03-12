@@ -41,7 +41,7 @@ var ProfileListView = Backbone.View.extend({
 	//render 1 profile to the list
 	renderProfile: function(profile){
 		profile.view = new ProfileView({ model: profile });
-		this.$el.empty();
+		// this.$el.empty();
 		this.$el.prepend( profile.view.render().el );
 		return this
 	},
@@ -127,7 +127,7 @@ var ProjectListView = Backbone.View.extend({
 	//render 1 project to the list
 	renderProject: function(project){
 		project.view = new ProjectView({ model: project });
-		this.$el.empty();
+		// this.$el.empty();
 		this.$el.append( project.view.render().el );
 		return this
 	},

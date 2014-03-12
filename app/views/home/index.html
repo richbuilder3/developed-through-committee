@@ -2,23 +2,24 @@
 		<!-- trying without the navbar -->
 		<div class="pageheader">
 			<h1>Development through Committee</h1>
-		<div class = "navbar navbar navbar-fixed-top"
-			<div class="container">
-			<div class="navbar-inner"> 
-				<button id="profile-button" type="button" class="btn btn-default btn-lg active">Contact us to become a part of the team</button>
-				
-				<button id="project-button" type="button" class="btn btn-default btn-lg active">Contact us for project</button>
-
-				<button id="about-button" type="button" class="btn btn-default btn-lg active">Development through what?</button>
-			</div>
-			</div> 
-			</div> 
-			</div>
-					<div id='profile-list'>
-					</div>
+			<div class = "navbar navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-inner"> 
+						<button id="profile-button" type="button" class="btn btn-default btn-lg active">Contact us to become a part of the team</button>
 					
-					<div id='project-list'>
+						<button id="project-button" type="button" class="btn btn-default btn-lg active">Contact us for project</button>
+
+						<button id="about-button" type="button" class="btn btn-default btn-lg active">Development through what?</button>
 					</div>
+				</div> 
+			</div> 
+		</div>
+		
+		<div id='profile-list'>
+		</div>
+		
+		<div id='project-list'>
+		</div>
 					
 					<div id='about-info'>
 						<h5>Development by Committee has two focuses. One to provide really great Web Applications at the best rates available. 
@@ -101,14 +102,19 @@
 					<!-- Profile template -->
 					<script id="profileview-template" type='text/x-handlebars-template'>
 					<h3> Hi, {{ name  }}, we will contact you shortly</h3>
-					
+					<p>{{ email }} </p>
+					<p> {{ title }} </p>
+					<p> {{ description }} </p>
+
 					</script>
 				
 
 	<!-- project/contact template -->
 		<script id="projectview-template" type='text/x-handlebars-template'>
 			<h3> Thanks,{{ name }}, we are looking forward to speaking to you. </h3>
-			
+			{{ email }}
+					{{ work }}
+					{{ story }}
 		</script>
 		
 		<%= javascript_include_tag "underscore" %>
