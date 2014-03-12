@@ -67,6 +67,13 @@ input{
   max-width: 200px;
 }
 
+.centertop {
+  margin-left:auto;
+  margin-right:auto;
+  width: 90%;
+  text-align: center;
+}
+
 #center {
  
     left: 0;
