@@ -9,6 +9,11 @@ p {
   color: white;
 }
 
+li {
+  color: white;
+
+}
+
 h1 {
 font-family: 'Bowlby One', cursive;
 color: white;
@@ -71,7 +76,18 @@ input{
   color: white;
 }
 
-
+#pop-area{
+  background-color: #801A00;
+  z-index: +1;
+  width: 50%;
+  height: 125px;
+  border-radius: 1em;
+  padding: 1em;
+  margin: .25em;
+  /*position: absolute;*/
+  float: right;
+  color: white;
+}
 #help {
   max-width: 200px; 
   max-width: 200px;
