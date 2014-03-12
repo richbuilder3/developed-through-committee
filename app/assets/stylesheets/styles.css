@@ -60,15 +60,7 @@ input{
   position: absolute;
   float: right;
 }
-/*
-li{
-  background-color: #FFFFCC;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: 0.25em;
-  width: 50%;
-  box-shadow: .1em .1em darkgray;
-}*/
+
 
 #help {
   max-width: 200px; 
