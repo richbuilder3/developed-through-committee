@@ -7,7 +7,6 @@ class Developer < User
 		self.profiles << @profile
 	end
 
-
 	def delete_profile!(developer, profile)
 		@profile = Profile.destroy(profile)
 	end

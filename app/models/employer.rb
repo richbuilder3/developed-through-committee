@@ -2,8 +2,7 @@ class Employer < User
 	
 	has_many :projects
 
-	
-	#saves in database and emails to to admin and 
+	#saves in database and emails to to admin 
 	def create_project!(project_params)
 		@project = Project.create(project_params)
 		self.projects << @project
