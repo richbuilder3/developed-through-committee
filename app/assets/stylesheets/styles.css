@@ -1,6 +1,7 @@
 body {
 	/*background-color: #B2E0FF;*/
-  background-color: #E25D33;
+  /*background-color: #E25D33;*/
+  background-color: #141D2F;
  /*padding-top: 40px;*/
 /*padding is for use with navbar 100px;*/
 }
@@ -50,7 +51,7 @@ input{
   text-align: right;
 }
 #about-info {
-  background-color: #FFFFCC;
+  background-color: #801A00;
   display: none;
   z-index: +1;
   width: 30%;
@@ -59,6 +60,7 @@ input{
   margin: .25em;
   position: absolute;
   float: right;
+  color: white;
 }
 
 
