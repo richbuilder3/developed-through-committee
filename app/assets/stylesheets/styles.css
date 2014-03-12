@@ -1,10 +1,20 @@
 body {
-	/*background-color: #B2E0FF;*/
-  /*background-color: #E25D33;*/
   background-color: #141D2F;
+  background-image: url('http://m.flikie.com/ImageData/WallPapers/71eee3ce6f42490a90af0e4e94f92f75.jpg');
  /*padding-top: 40px;*/
 /*padding is for use with navbar 100px;*/
 }
+
+p {
+  color: white;
+}
+
+h1 {
+font-family: 'Bowlby One', cursive;
+color: white;
+font-size: 50px;
+}
+
 ul{
   font-size: 1.5em;
 }
@@ -37,8 +47,6 @@ input{
   height: 100px;
   float: right;
   text-align: right;
-  /*float: right;*/
- /* box-shadow: .1em .1em darkgray;*/
 }
 #profile-list {
   /*background-color: #FFFFCC;*/
@@ -90,4 +98,5 @@ input{
 #title {
   font-family: 'Tangerine', serif;
 }
+
 
