@@ -132,7 +132,7 @@ var ProjectListView = Backbone.View.extend({
 		return this
 	},
 
-	// how to render all
+	// Render all
 	// render: function(){
 	// 	var self = this;
 	// 	this.$el.empty();
@@ -193,13 +193,6 @@ function eventHandlers() {
 		$('#about-info').fadeIn(500).css({display:'none'});
 	});
 }
-
-// function eventHandlers() {
-// 	$('#project-button').on('click', function(e){
-// 		$('#project-form').fadeIn(1000).css({display:'block'});
-// 		$('#project-form').fadeIn(1000).css({display:'none'});
-// 	});
-// }
 
 $(function(){
 	eventHandlers();
