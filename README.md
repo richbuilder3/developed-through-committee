@@ -1,5 +1,5 @@
 
-Development through Committee
+##Development through Committee
 
 	Development by Committee(DTC) has two focuses, the Client and our Developers. The focus is to provide really great Web Applications at great rates.
 
@@ -13,6 +13,13 @@ Development through Committee
 	After registering as a Client you'll be able to email our team to request a quote for your web Application.
 
 
-	DTC was made using Rails 4 along with Backbone.js, and Handlerbars for templating. 
+	
+
+	#Technologies Used:
+
+	Ruby on Rails
+	JavaScript/jQuery
+	Backbone.js
+	Handlebars
 
 <tt>rake doc:app</tt>.
