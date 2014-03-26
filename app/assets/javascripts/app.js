@@ -1,3 +1,5 @@
+// Profile Code -------------------
+
 var Profile = Backbone.Model.extend({
 	defaults: {
 		name: '',
@@ -6,60 +8,38 @@ var Profile = Backbone.Model.extend({
 		story: ''
 	}
 });
-//  Profile View
+
 var ProfileView = Backbone.View.extend({
 	tagName: 'div',
-	//template
 	template: Handlebars.compile( $("#profileview-template").html() ),
-	// render
 	render: function(){
 		this.$el.html( this.template( this.model.attributes ) );
 		return this
 	}
 });
 
-// Collection
 var ProfileCollection = Backbone.Collection.extend({
 	url: 'profiles',
-	// Model
 	model: Profile,
 	initialize: function(){
 		this.fetch()
 	}
 });
 
-// Profile List View
 var ProfileListView = Backbone.View.extend({
-	// listener to react to added event
 	initialize: function(){
 		this.listenTo(this.collection, 'add', this.renderProfile)
 	},
-
-	//render 1 profile to the list
 	renderProfile: function(profile){
 		profile.view = new ProfileView({ model: profile });
-		// this.$el.empty();
 		this.$el.prepend( profile.view.render().el );
 		return this
 	},
 
-	// will render entire list
-	// render: function(){
-	// 	var self = this;
-	// 	this.$el.empty();
-	// 	_.each(this.collection.models, function(profile){
-	// 		self.renderProfile(profile);
-	// 	});
-	// }
 });
 
-// profile form View
 var ProfileFormView = Backbone.View.extend({
 
-// events?
-// getformdata?
-// clearform?
-// submitCallback?
 	events:{
 		'submit':'submitCallback'
 	},
@@ -82,6 +62,8 @@ var ProfileFormView = Backbone.View.extend({
 		this.$('input').val('')
 	}
 });
+
+ // Project Code -----------------------------------------
 
 // Project Model
 var Project = Backbone.Model.extend({
@@ -172,23 +154,22 @@ var ProjectFormView = Backbone.View.extend({
 
 
 
-//Project variables
+//Project Variables & Profile Variables
 var project_collection, project_list_view, project_form;
-// Profile variables
 var profile_collection, profile_list_view, profile_form_view;
 
 function eventHandlers() {
 	$('#profile-button').on('click', function(e) {
-		$('#profile-form').fadeIn(500).css({display:'block'});
-		$('#profile-form').fadeIn(500).css({display:'none'});
+		$('#profile-form').fadeIn(700).css({display:'block'});
+		$('#profile-form').fadeIn(700).css({display:'none'});
 	});
 	$('#project-button').on('click', function(e){
-		$('#project-form').fadeIn(500).css({display:'block'});
-		$('#project-form').fadeIn(500).css({display:'none'});
+		$('#project-form').fadeIn(700).css({display:'block'});
+		$('#project-form').fadeIn(700).css({display:'none'});
 	});
 	$('#about-button').on('click', function(e){
-		$('#about-info').fadeIn(500).css({display:'block'});
-		$('#about-info').fadeIn(500).css({display:'none'});
+		$('#about-info').fadeIn(700).css({display:'block'});
+		$('#about-info').fadeIn(700).css({display:'none'});
 	});
 }
 
@@ -203,5 +184,3 @@ $(function(){
 	project_form_view = new ProjectFormView({collection: project_collection, el: $('#project-form')})
 
 });
-
-
