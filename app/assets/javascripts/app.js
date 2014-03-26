@@ -1,5 +1,4 @@
 // Profile Code -------------------
-
 var Profile = Backbone.Model.extend({
 	defaults: {
 		name: '',

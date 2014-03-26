@@ -43,6 +43,7 @@ input{
   z-index: +1;
   position: absolute;
 }
+
 #project-list {
  z-index: +1;
   width: 50%;
