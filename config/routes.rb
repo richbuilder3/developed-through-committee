@@ -19,10 +19,6 @@ Dtc::Application.routes.draw do
 
   match '/send_mail', to: 'contact#send_mail', via: 'post'
 
-  match '/contacts',     to: 'contacts#new',             via: 'get'
-  resources "contacts", only: [:new, :create]
-
-
 end
 
 #                   Prefix Verb   URI Pattern                    Controller#Action

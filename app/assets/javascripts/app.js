@@ -1,4 +1,3 @@
-// Profile Model
 var Profile = Backbone.Model.extend({
 	defaults: {
 		name: '',
@@ -9,11 +8,9 @@ var Profile = Backbone.Model.extend({
 });
 //  Profile View
 var ProfileView = Backbone.View.extend({
-	// tagName
 	tagName: 'li',
 	//template
 	template: Handlebars.compile( $("#profileview-template").html() ),
-
 	// render
 	render: function(){
 		this.$el.html( this.template( this.model.attributes ) );
@@ -55,6 +52,7 @@ var ProfileListView = Backbone.View.extend({
 	// 	});
 	// }
 });
+
 // profile form View
 var ProfileFormView = Backbone.View.extend({
 
@@ -128,7 +126,7 @@ var ProjectListView = Backbone.View.extend({
 	renderProject: function(project){
 		project.view = new ProjectView({ model: project });
 		// this.$el.empty();
-		this.$el.append( project.view.render().el );
+		this.$el.prepend( project.view.render().el );
 		return this
 	},
 

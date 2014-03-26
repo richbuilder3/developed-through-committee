@@ -46,11 +46,6 @@ gem 'capybara'
 gem 'devise'
 
 
-# for contact form
-gem 'mail_form'
-gem 'simple_form'
-
-
 group :development, :test do
 	gem 'foreman'
 end

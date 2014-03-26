@@ -1,9 +1,0 @@
-edit.html.erb
-
-<form action="<%= project_path(@project) %>" method="post">
-	<input type="text" name="title" value="<%= @project.title %>"/>
-	<input type="text" name="email" value="<%= @project.email %>" />
-	<input type="text" name="description" value="<%= @project.title %>" />
-	<input name="_method" type="hidden" value="put" />
-	<input type="submit" value="Edit">
-</form>

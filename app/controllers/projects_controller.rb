@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
-	# before_filter :signed_in_employer
-		# above for signed in employer
+	# before_filter :authenticate_employer
 
 	def index
 		@projects = Project.all
