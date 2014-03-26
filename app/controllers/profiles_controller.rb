@@ -1,6 +1,5 @@
 class ProfilesController < ApplicationController
 	#before_filter :signed_in_developer
-		# above for signed in developer
 
 	def index
 		@profiles = Profile.all
