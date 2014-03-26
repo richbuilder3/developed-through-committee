@@ -1,7 +1,7 @@
 
 ##Development through Committee
 
-	Development by Committee(DTC) has two focuses, the Client and our Developers. The focus is to provide really great Web Applications at great rates.
+	Development by Committee(DTC) has two focuses, Clients and Developers. DTC will provide really great Web Applications at great rates.
 
 	As a client, your project will benefit by being development by a large team of great web developers.
 

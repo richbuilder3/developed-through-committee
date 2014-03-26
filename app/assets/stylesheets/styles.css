@@ -1,6 +1,7 @@
 body {
   background-color: #141D2F;
-  background-image: url('http://m.flikie.com/ImageData/WallPapers/71eee3ce6f42490a90af0e4e94f92f75.jpg');
+  /*background-image: url('http://m.flikie.com/ImageData/WallPapers/71eee3ce6f42490a90af0e4e94f92f75.jpg');*/
+ background-image: url('/images/vertical_cloth.png');
  /*padding-top: 40px;*/
 /*padding is for use with navbar 100px;*/
 }
