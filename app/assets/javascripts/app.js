@@ -8,7 +8,7 @@ var Profile = Backbone.Model.extend({
 });
 //  Profile View
 var ProfileView = Backbone.View.extend({
-	tagName: 'li',
+	tagName: 'div',
 	//template
 	template: Handlebars.compile( $("#profileview-template").html() ),
 	// render
@@ -96,7 +96,7 @@ var Project = Backbone.Model.extend({
 //  Project View
 var ProjectView = Backbone.View.extend({
 	// tagName
-	tagName: 'li',
+	tagName: 'div',
 	//template
 	template: Handlebars.compile( $("#projectview-template").html() ),
 
