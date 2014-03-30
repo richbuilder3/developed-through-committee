@@ -62,7 +62,7 @@ var ProfileFormView = Backbone.View.extend({
 	}
 });
 
- // Project Code -----------------------------------------
+ // Project Code ------------------------------------------------------
 
 // Project Model
 var Project = Backbone.Model.extend({
